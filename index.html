@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> [🐈] cats & facts !</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1> the purrfect meow machine 💕 </h1>
+      <p> tap “meow!” for a random cat photo + cat fact 🐈 </p>
+    </header>
+
+    <section class="controls">
+      <button id="meowBtn">🐾 meow!</button>
+      <button id="favBtn" disabled>⭐ Save this to favorites ! </button>
+      <button id="clearFavsBtn" class="secondary"> Clear favorites .., </button>
+    </section>
+
+    <section class="viewer">
+      <div id="imgWrap" class="img-wrap">
+        <div class="placeholder"> click meow!” to begin ..🐾</div>
+      </div>
+      <div class="fact-area">
+        <h2>Cat Fact</h2>
+        <p id="factText" class="fact">—</p>
+      </div>
+      <p id="status" class="status"></p>
+    </section>
+
+    <section class="favorites">
+      <h2> your faavorite cats !! </h2>
+      <div id="favGrid" class="grid"></div>
+    </section>
+
+    <footer>
+      <small>
+        Photos: <a href="https://thecatapi.com/" target="_blank" rel="noopener">TheCatAPI</a> ·
+        Facts: <a href="https://catfact.ninja/" target="_blank" rel="noopener">catfact.ninja</a> <br>
+        <br>
+        made by kei 🐾💗..
+      </small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
